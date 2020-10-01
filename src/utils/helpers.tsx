@@ -127,7 +127,7 @@ const ETHERSCAN_PREFIXES = {
 
 export function getEtherscanLink(networkId, data, type) {
     const prefix = `https://${ETHERSCAN_PREFIXES[networkId] ||
-        ETHERSCAN_PREFIXES[56]}`;
+        ETHERSCAN_PREFIXES[97]}`;
 
     switch (type) {
         case 'transaction': {

@@ -71,7 +71,7 @@ const Header = () => {
                 </Title>
             </HeaderElement>
             <HeaderElement>
-                <Link href="https://pool.bscswap.pro" target="_blank">
+                <Link href="https://testnet-pool.bscswap.pro" target="_blank">
                     Add Liquidity
                 </Link>
                 <Wallet />
