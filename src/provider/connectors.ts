@@ -6,15 +6,12 @@ const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
         options: {
-            infuraId: process.env.REACT_APP_INFURA_ID,
+            rpc: {
+              56: "https://bsc-dataseed.binance.org",
+              97: "https://data-seed-prebsc-1-s1.binance.org:8545"
+            }
         },
-    },
-    portis: {
-        package: Portis,
-        options: {
-            id: '3f1c3cfc-7dd5-4e8a-aa03-71ff7396d9fe',
-        },
-    },
+    }
 };
 
 export const web3Modal = new Web3Modal({
@@ -44,6 +41,8 @@ export const chainNameById = {
     '1': 'mainnet',
     '3': 'ropsten',
     '42': 'kovan',
+    '56': 'bscmainnet',
+    '97': 'bsctestnet',
 };
 
 export const isChainIdSupported = (chainId: number): boolean => {
@@ -54,12 +53,16 @@ const RPC_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_RPC_URL_1 as string,
     3: process.env.REACT_APP_RPC_URL_3 as string,
     42: process.env.REACT_APP_RPC_URL_42 as string,
+    56: process.env.REACT_APP_RPC_URL_56 as string,
+    97: process.env.REACT_APP_RPC_URL_97 as string,
 };
 
 export const SUBGRAPH_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_SUBGRAPH_URL_1 as string,
     3: process.env.REACT_APP_SUBGRAPH_URL_3 as string,
     42: process.env.REACT_APP_SUBGRAPH_URL_42 as string,
+    56: process.env.REACT_APP_SUBGRAPH_URL_56 as string,
+    97: process.env.REACT_APP_SUBGRAPH_URL_97 as string,
 };
 
 export const backupUrls = {};

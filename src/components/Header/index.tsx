@@ -65,13 +65,13 @@ const Header = () => {
             <HeaderElement>
                 <Title>
                     <a href="/">
-                        <img src="pebbles-pad.svg" alt="pebbles" />
+                        <img src="pebbles-pad.png" alt="pebbles" />
                     </a>
                     <AppName>{appConfig.name}</AppName>
                 </Title>
             </HeaderElement>
             <HeaderElement>
-                <Link href="https://pools.balancer.exchange" target="_blank">
+                <Link href="https://pool.bscswap.pro" target="_blank">
                     Add Liquidity
                 </Link>
                 <Wallet />

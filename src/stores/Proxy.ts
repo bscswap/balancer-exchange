@@ -402,7 +402,7 @@ export default class ProxyStore {
                 this.setPreviewPending(false);
                 return emptyExactAmountInPreview(
                     inputAmount,
-                    'Insufficient liquidity on Balancer'
+                    'Insufficient liquidity on BSCswap Pro'
                 );
             }
 
@@ -495,7 +495,7 @@ export default class ProxyStore {
                 this.setPreviewPending(false);
                 return emptyExactAmountOutPreview(
                     outputAmount,
-                    'Insufficient liquidity on Balancer'
+                    'Insufficient liquidity on BSCswap Pro'
                 );
             }
 

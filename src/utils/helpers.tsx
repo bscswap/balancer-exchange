@@ -116,16 +116,18 @@ export function formatPctString(value: BigNumber): string {
 }
 
 const ETHERSCAN_PREFIXES = {
-    1: '',
-    3: 'ropsten.',
-    4: 'rinkeby.',
-    5: 'goerli.',
-    42: 'kovan.',
+    1: 'etherscan.io',
+    3: 'ropsten.etherscan.io',
+    4: 'rinkeby.etherscan.io',
+    5: 'goerli.etherscan.io',
+    42: 'kovan.etherscan.io',
+    56: 'bscscan.com',
+    97: 'testnet.bscscan.com',
 };
 
 export function getEtherscanLink(networkId, data, type) {
     const prefix = `https://${ETHERSCAN_PREFIXES[networkId] ||
-        ETHERSCAN_PREFIXES[1]}etherscan.io`;
+        ETHERSCAN_PREFIXES[56]}`;
 
     switch (type) {
         case 'transaction': {
@@ -164,7 +166,7 @@ export const copyToClipboard = e => {
 };
 
 export const etherscanUrl = network => {
-    return `https://${network !== 'main' ? `${network}.` : ''}etherscan.io`;
+    return `https://${network !== 'main' ? `${network}.` : ''}bscswap.com`;
 };
 
 export const etherscanAddress = (network, text, address) => {

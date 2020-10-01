@@ -368,7 +368,7 @@ const TradeComposition = observer(() => {
             >
                 <CompositionTitle>
                     Your order has been optimized using {chartData.noPools}{' '}
-                    Balancer pool{chartData.noPools > 1 ? 's' : ''} 🎉
+                    BSCswap Pro pool{chartData.noPools > 1 ? 's' : ''} 🎉
                 </CompositionTitle>
                 <PoolLineContainer>
                     {renderChartRows(chartData, formatting)}

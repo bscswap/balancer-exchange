@@ -101,7 +101,7 @@ export default class PoolStore {
 
         if (!pool) {
             throw new Error(
-                '[Invariant] No pool found for selected balancer index'
+                '[Invariant] No pool found for selected BSCswap Pro index'
             );
         }
 

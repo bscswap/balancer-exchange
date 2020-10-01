@@ -54,13 +54,11 @@ const IconAndNameContainer = styled.div`
 
 export const TokenIconAddress = (address, hasIcon) => {
     if (address === 'ether') {
-        return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png`;
+        return `https://tokens.bscswap.com/images/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png`;
     } else if (!hasIcon) {
         return './empty-token.png';
     } else {
-        return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-            address
-        )}/logo.png`;
+        return `https://tokens.bscswap.com/images/${isAddress(address)}.png`;
     }
 };
 
